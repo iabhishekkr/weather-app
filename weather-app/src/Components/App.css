@@ -1,0 +1,7 @@
+.app {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://media.istockphoto.com/id/1007768414/photo/blue-sky-with-bright-sun-and-clouds.jpg?b=1&s=170667a&w=0&k=20&c=rHd7W8nOPEdKEnuMgpSnfC2OC9B_rwMe1HS7k_d-ORc=");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,0 +1,130 @@
+.nav {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fav {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+}
+
+.favmarker {
+    color: white;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+li:hover {
+    color: red;
+    font-size: 1.1rem;
+    transition-duration: 0.6s;
+}
+
+.title {
+    font-size: larger;
+    font-weight: 500;
+}
+
+
+
+.searchbar {
+    border-radius: 10px;
+    border: none;
+    height: 1.5rem;
+    padding: 5px;
+}
+
+.btn {
+    cursor: pointer;
+    /* margin-top: 11px; */
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 2rem;
+    width: 4rem;
+}
+
+.main-container {
+    margin-top: -30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 40vw;
+}
+
+.condition {
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.city {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-left: 2vw;
+}
+
+
+.temp,
+.deg {
+    font-size: 2.5rem;
+}
+
+.deg {
+    position: relative;
+    bottom: 13px;
+}
+
+.min-max-temp,
+.min-max-temp>span {
+    font-size: 1.6rem;
+}
+
+.air-quality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.air {
+    padding-top: 6px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    height: 40px;
+    background-color: rgb(131, 131, 30);
+    border: none;
+    border-radius: 50px;
+    width: 20vw;
+}
+
+.min-max {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.more {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.more:hover {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
