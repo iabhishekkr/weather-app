@@ -91,7 +91,7 @@ function Weather() {
                         else {
                             const newfav = fav.filter((e) => e !== currCity)
                             setFav(newfav)
-                            localStorage.setItem('favCities', JSON.stringify(newfav))
+                            localStorage.setItem('favCities', JSON.stringify([...newfav]))
                             e.target.style.color = 'white'
                         }
 
