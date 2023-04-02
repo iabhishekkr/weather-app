@@ -56,6 +56,7 @@ function Weather() {
     }, [fav])
     return (
         <>
+            {console.log('localData', localData)}
             <div className="nav">
                 <div className="search">
                     <input ref={inpRef} type="text" className='searchbar' placeholder='Search for city' />
@@ -67,7 +68,7 @@ function Weather() {
                 <div className="fav">
                     <div className="title">Favourites</div>
                     <ul>
-                        {localData.map((e) => <li key={e} onClick={() => {
+                        {localData != null && localData.map((e) => <li key={e} onClick={() => {
                             setCurrCity(e);
                         }}>{e}</li>)}
                     </ul>
@@ -76,8 +77,13 @@ function Weather() {
             </div>
             <div className='main-container'>
                 <div className="city">
-                    {name}  <span className="favmarker" style={(localData.includes(currCity) ? { color: 'yellow' } : { color: "white" })} onClick={(e) => {
-                        if (!localData.includes(currCity)) {
+                    {name}  <span className="favmarker" style={((localData != null && localData.includes(currCity)) ? { color: 'yellow' } : { color: "white" })} onClick={(e) => {
+                        if (localData == null) {
+                            setFav([...fav, currCity]);
+                            e.target.style.color = 'yellow'
+                            localStorage.setItem('favCities', JSON.stringify([...fav, currCity]))
+                        }
+                        else if (!localData.includes(currCity)) {
                             setFav([...fav, currCity]);
                             e.target.style.color = 'yellow'
                             localStorage.setItem('favCities', JSON.stringify([...localData, currCity]))
