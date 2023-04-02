@@ -1,0 +1,43 @@
+.weather-container {
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.city-name {
+    text-align: center;
+    font-size: 2rem;
+}
+
+th,
+td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+th {
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+td {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.back-btn {
+    background-color: rgb(158, 206, 234);
+    color: rgb(73, 35, 35);
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
